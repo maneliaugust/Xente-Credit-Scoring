@@ -44,12 +44,14 @@ Test set
 
 🔄 Project Pipeline
 1️⃣ Problem Definition
+
 Define classification objective
 Identify classes
 Determine cost of false positives vs false negatives
 
 
 2️⃣ Data Cleaning
+
 Handle missing values
 Remove duplicates
 Fix inconsistent formats
