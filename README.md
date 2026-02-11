@@ -7,9 +7,13 @@ The dataset comes from the Zindi – Standard Bank Tech Impact Challenge (Xente 
 
 The goal is to help fintech companies make smarter lending decisions by identifying high-risk customers before issuing loans.
 
+
+
 🎯 Problem Statement
 
 Xente provides short-term “Pay Later” loans to customers in Uganda.
+
+
 
 The objective is:
 
@@ -24,6 +28,8 @@ IsDefaulted
 0 → Customer repaid successfully
 
 This is a binary classification problem.
+
+
 
 📂 Dataset Description
 
@@ -53,13 +59,18 @@ AmountLoan
 
 IsDefaulted (Target)
 
+
+
 The data is chronologically split into:
 
 Train set
 
 Test set
 
+
+
 🔄 Project Pipeline
+
 1️⃣ Problem Definition
 
 Define classification objective
@@ -67,6 +78,8 @@ Define classification objective
 Identify classes
 
 Determine cost of false positives vs false negatives
+
+
 
 2️⃣ Data Cleaning
 
@@ -80,6 +93,8 @@ Convert date columns
 
 Detect outliers
 
+
+
 3️⃣ Exploratory Data Analysis (EDA)
 
 Class imbalance check
@@ -89,6 +104,8 @@ Feature distributions
 Correlation analysis
 
 Identify anomalies
+
+
 
 4️⃣ Feature Engineering
 
@@ -100,6 +117,8 @@ Scale numeric features
 
 Remove leakage features
 
+
+
 5️⃣ Data Splitting
 
 Train
@@ -107,6 +126,8 @@ Train
 Validation
 
 Test
+
+
 
 6️⃣ Modeling
 Baseline Model
@@ -131,6 +152,8 @@ Class imbalance handled using:
 
 class_weight = "balanced"
 
+
+
 📈 Model Evaluation
 
 Models were evaluated using:
@@ -145,9 +168,9 @@ Recall
 
 F1-score
 
-ROC-AUC
-
 Since this is a credit scoring problem, Recall and ROC-AUC are more important than Accuracy.
+
+
 
 ⚖️ Error Consideration
 
@@ -157,6 +180,8 @@ False Negative (predict non-default but customer defaults)
 → Financial loss (more costly)
 
 Therefore, minimizing False Negatives is important.
+
+
 
 🛠️ Technologies Used
 
@@ -170,17 +195,7 @@ Scikit-learn
 
 Matplotlib / Seaborn
 
-🚀 Future Improvements
 
-Hyperparameter tuning with GridSearchCV
-
-XGBoost / LightGBM implementation
-
-Feature importance analysis
-
-Model calibration
-
-Deployment pipeline
 
 📌 Conclusion
 
